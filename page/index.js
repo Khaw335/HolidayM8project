@@ -26,6 +26,11 @@ var jwt = localStorage.getItem("jwt");
         loadUser();
 
 
+        function logout() {
+            localStorage.removeItem("jwt");
+            window.location.href = "./login.html"
+          }
+          
         var selectedRow = null;
         function onFormSubmit(e){
             event.preventDefault();
@@ -62,7 +67,8 @@ var jwt = localStorage.getItem("jwt");
             var cell4 = newRow.insertCell(3);
                 cell4.innerHTML = data.description;
             var cell5 = newRow.insertCell(4);
-                cell5.innerHTML = `<button onClick='onEdit(this)'>Edit</button> <button onClick='onDelete(this)'>Delete</button>`
+                cell5.innerHTML = `<button class="edit" onClick='onEdit(this)'>Edit</button> 
+                <button class="delete" onClick='onDelete(this)'>Delete</button>`
         }
         
         //Edit the data
@@ -83,7 +89,7 @@ var jwt = localStorage.getItem("jwt");
         
         //Delete the data
         function onDelete(td){
-            if(confirm('Do you want to delete this record?')){
+            if(confirm('Do you want to delete this Holidays')){
                 row = td.parentElement.parentElement;
                 document.getElementById('holidayList').deleteRow(row.rowIndex);
             }

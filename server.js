@@ -9,36 +9,36 @@ const { createConnection } = require('net')
 const PORT = process.env.PORT || 3001
 app.get('/', (req, res) => res.send('Hello World'))
 
-app.use(cors());
-app.use(express.json());
+// app.use(cors());
+// app.use(express.json());
 
-const db = mysql.createConnection({
-    host: "192.168.64.2",
-    user: "root",
-    password: "1234",
-    database: "myholiday"
-})
+// const db = mysql.createConnection({
+//     host: "192.168.64.2",
+//     user: "root",
+//     password: "1234",
+//     database: "myholiday"
+// })
 
-createConnection.connect((error) => {
-    if (err) {
-        console.log(err);
-    } else{
-        console.log('Connected...');
-    }
-})
-module.exports = connection;
+// createConnection.connect((error) => {
+//     if (err) {
+//         console.log(err);
+//     } else{
+//         console.log('Connected...');
+//     }
+// })
+// module.exports = connection;
 
 
-app.get('/myholiday',(req,res) => {
-    db.query("SELECT * FROM myholiday",(err, result) => {
-        if(err) {
-            console.log(err);
-        } else {
-            res.send();
-        }
-    });
-});
-module.exports = app
+// app.get('/myholiday',(req,res) => {
+//     db.query("SELECT * FROM myholiday",(err, result) => {
+//         if(err) {
+//             console.log(err);
+//         } else {
+//             res.send();
+//         }
+//     });
+// });
+// module.exports = app
 
 
 // passport.use(new FacebookStrategy({

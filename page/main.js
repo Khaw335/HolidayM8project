@@ -1,5 +1,3 @@
-
-
 window.addEventListener('load', () => {
     fetch('https://calendarific.com/api/v2/holidays?&api_key=b54d6a12b4fcbbf717dabb9eb7a0f764764f7568&country=TH&year=2022', {
         method: 'GET'

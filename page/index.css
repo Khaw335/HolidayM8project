@@ -1,86 +1,68 @@
-html,body{
-    height: 100%;
+.body {
+    background: url(https://www.biznuspayroll.co.uk/wp-content/uploads/2015/10/Holiday.jpg) no-repeat center center fixed;
+    background-size: cover;
 }
-body {
-    background-color: #e4cbcb;
+.card {
+    margin:30px 30px 30px 30px;
+}
+.container {
+    opacity: 0.9;
 }
 .myholiday {
     margin: 20px 20px 20px 20px;
 }
-.form-control {
-    width: 40%;
-}
-
-body{
-    background-image: url('background.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-}
-
 table{
-    width: 80%;
-    margin: 40px auto;
-    background: rgb(124,154,167);
+    width: 100%;
+    background-color: #7285A5;
 }
-
 table.list{
     text-align: center;
     width: 100%;
 }
-
 td{
     border: 1px solid rgb(204,200,200);
     text-align: left;
     padding: 8px 15px;
 }
-
-tr:nth-child(even), table.list thread> tr{
-    background-color: rgb(204,200,200);
-}
-
 input[type="text"],input[type="number"]{
-    width:91%;
+    width:90%;
     padding:12px 20px;
-    margin:8px 0;
-    display: inline-block;
-    border: 1px solid rgb(165,161,161);
+    margin-bottom: 10px;
+    border: 1px solid white;
     border-radius: 4px;
 }
 
 input[type="submit"],input[type="reset"]{
-    background: #eee;
-    padding:6px 12px;
+    background-color: white;
+    width: 100px;
+    height: 50px;
     margin:15px 0 10px;
-    display: inline-block;
-    border: none;
     border-radius: 30px;
     font-size: 1rem;
     cursor: pointer;
-    outline: none;
 }
 
 input[type="submit"]:hover{
-    background: #4b99d8;
+    background: #74C095;
 }
 
 input[type="reset"]:hover{
-    background: #4b99d8;
+    background: #DC493F;
 }
-
 button{
-    background: #eee;
-    padding:6px 12px;
-    margin:15px 0 10px;
-    display: inline-block;
-    border: none;
+    background: white;
+    width: 80px;
+    height: 30px;
     border-radius: 30px;
     font-size: 1rem;
     cursor: pointer;
     outline: none;
 }
-
-button:hover{
-    background:#4b99d8 ;
+.edit:hover{
+    background-color: #4b99d8 ;
 }
+.delete:hover{
+    background-color: #DC493F;
+}
+
 

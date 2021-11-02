@@ -9,7 +9,7 @@
     <link href="./index.css" rel="stylesheet">
     <title>Holiday!</title>
   </head>
-  <body>
+  <body class="body">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">Holiday</a>
@@ -36,16 +36,65 @@
         </div>
       </nav>
 
-      <div class="container-fluid p-3">
-      <div class="card">
-        <img class="p-2" id="avatar" src="user.png" width="200">
+      <div class="container">
+      <div class="card p-4">
+        <img class="" id="avatar" src="user.png" width="200">
         <div class="card-body">
           <p class="card-text" id="username">...</p>
         </div>
-
+        <hr>
         <div class="myholiday">
           <h1>My Holiday</h1>
-          <!-- <div class="form">
+          <table>
+            <tr>
+              <td>
+                <form autocomplete="off" onsubmit="onFormSubmit()">
+                  <div>
+                    <label for="id">ID</label>
+                    <br>
+                    <input type="number" name="id" id="id" placeholder="Ex. 01">
+                  </div>
+                  <div>
+                    <label for="holiday">My Holiday</label>
+                    <br>
+                    <input type="text" name="holiday" id="holiday" placeholder="Ex. appointment">
+                  </div>
+                  <div>
+                    <label for="date">Date</label>
+                    <br>
+                    <input type="text" name="date" id="date" placeholder="Ex. 2020-11-14">
+                  </div>
+                  <div>
+                    <label for="description">Note</label>
+                    <br>
+                    <input type="text" name="description" id="description" placeholder="Ex. vaccinate">
+                  </div>
+  
+                  <div class="form_action--button">
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Reset">
+                  </div>
+                </form>
+  
+                <td>
+                  <table class="list" id="holidayList">
+                    <thead>
+                      <tr>
+                        <th>id</th>
+                        <th>holiday</th>
+                        <th>date</th>
+                        <th>description</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                    <!-- แสดงข้อมูล -->
+                    </tbody>
+                  </table>
+                </td>
+              </td>
+            </tr>
+        </table>
+      <!-- <div class="form">
             <form action="">
               <div class="mb-3">
                 <label class="form-lebel">Name</label>
@@ -68,52 +117,7 @@
           <button class="btn btn-primary">Show MyHoliday</button>
           
         </div> -->
-
-        <table>
-          <tr>
-              <td>
-                  <form autocomplete="off" onsubmit="onFormSubmit()">
-                      <div>
-                          <label for="id">Id</label>
-                          <input type="number" name="id" id="id">
-                      </div>
-                      <div>
-                          <label for="holiday">holiday</label>
-                          <input type="text" name="holiday" id="holiday">
-                      </div>
-                      <div>
-                          <label for="date">Date</label>
-                          <input type="text" name="date" id="date">
-                      </div>
-                      <div>
-                          <label for="description">Description</label>
-                          <input type="text" name="description" id="description">
-                      </div>
-  
-                      <div class="form_action--button">
-                          <input type="submit" value="Submit">
-                          <input type="reset" value="Reset">
-                      </div>
-                  </form>
-  
-                  <td>
-                      <table class="list" id="holidayList">
-                          <thead>
-                              <tr>
-                                  <th>id</th>
-                                  <th>holiday</th>
-                                  <th>date</th>
-                                  <th>description</th>
-                              </tr>
-                          </thead>
-                          <tbody>
-  
-                          </tbody>
-                      </table>
-                  </td>
-              </td>
-          </tr>
-      </table>
+        
       </div>
     </div>
     
